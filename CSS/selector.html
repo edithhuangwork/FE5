@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./selector.css">
+    <title>css selectors</title>
+</head>
+<body>
+    <!-- id selector -->
+    <!-- CSS is more specific to the elements,所以id權限>h2(element)權限,id會變藍色而唔係綠色 -->
+    <h2 id="heading">ID selector to blue</h2>
+    <h1 id="heading">ID selector to blue</h1>
+    <h2>Hello World</h2>
+    <h2>Hello World 2</h2>
+    <div class="box" id="unique-box">
+        <!-- 權限ranking：id >class >element -->
+        <h2>element direct child</h2>
+        <h2>element second child</h2>
+        <h3 class="child">class direct child</h3>
+        <!-- 加span 令下面的h2變成孫，而唔係box個仔 -->
+        <span><h2>element not direct child</h2></span>
+        <span><h3 class="child">element not direct child</h3></span>
+        <p class="simple">simple class selector to lime</p>
+        <div class="inner-box first-box">multiple classes</div>
+        <div class="inner-box">Inner box 2</div>
+    </div>
+    <ul>
+        <li class="first">item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+    </ul>
+    <!-- attributes -->
+    <input type="text" placeholder="attribute selector"/>
+    <!-- pseudo element (#可替換任何id，如只打#，會跳轉本page)-->
+    <a href="#" class="pseudo-class">pseudo-class selector</a>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis odit quisquam corporis? Quod eligendi tempora, deleniti omnis illo laborum dicta nesciunt accusantium deserunt velit, assumenda unde, vero mollitia magnam!
+        </p>
+        <h4>Lorem, ipsum dolor.</h4>
+        <h5>Lorem ipsum dolor sit amet.</h5>
+</body>
+</html>

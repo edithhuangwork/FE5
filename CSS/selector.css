@@ -1,0 +1,80 @@
+/* universal selector */
+* {
+    word-spacing: 3px;
+}
+/* element selector */
+h2 {
+    color: #55eb14;
+}
+/* id selector */
+#heading {
+    color: blue;
+}
+#unique-box {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* class's direct element */
+.box > h2 {
+    color: red;
+}
+/* element's diect child */
+span > h2 {
+    color: yellow;
+}
+/* class direct class */
+.box > .child {
+    color: peru;
+}
+.simple {
+    color: lime
+}
+.box {
+    background-color: #896e59dc
+}
+/* multiple class within element */
+/* .class.class係and，.class1 .class係.class1的child*/
+.inner-box.first-box {
+    color: pink;
+}
+
+/* descending class child, grandchild*/
+.box .inner-box {
+    background-color: green
+}
+
+/* descending element child, grandchild */
+div h2 {
+    font-size: 20px;
+}
+/* adjacent sibling (加幾多個+ li加幾多個，就由first往下數第幾個就會變顏色) */
+.first + li {
+    background-color: green;
+}
+/* general siblings (加幾多個~ li，就由first往下數第幾個就會變顏色) */
+.first ~ li {
+    color: red;
+}
+/* nth child (單數2n+1, 雙數2n)*/
+ul li:nth-child(3) {
+    font-size: 30px;
+}
+input[type="text"]{
+    border: 2px solid blue;
+    padding: 15px;
+}
+/* pseudo element */
+p::first-line {
+    font-weight: bold;
+}
+/* pseudo-class */
+.pseudo-class:hover {
+    color: #ff5733; 
+    text-decoration: underline;
+}
+/* mulitple selectors */
+h4, h5 {
+    font-size: 26px;
+}
+/**/

@@ -1,0 +1,96 @@
+html, 
+body {
+  font-family:"Winky Sans", Georgia, 'Times New Roman', Times, sans-serif; // font is carry to child;
+  border: 3px solid red;
+}
+/* *係全page通用，line-height係2倍 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  border: 3px solid red;
+  line-height: 2;
+}
+.sporty {
+  color: #f00;
+}
+.casual {
+  color: #00f;
+}
+.formal {
+  color:  brown;
+}
+
+main {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #caf1ff; 
+}
+/* colors:1.HEX 2.RGB 3.hsl(通常印刷用) */
+h2 { 
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  word-spacing: 12px;
+  text-align: left;
+}
+/* text-transform: 正楷capitalize/大楷uppercase/小楷lowercase */
+
+.card {
+  /* background-color:#fff; */
+  opacity: 0.9; 
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black ;
+}
+
+p {
+  color: purple;
+}
+p::first-letter {
+  text-transform: capitalize;
+}
+.sporty + p {
+  color: red; !important;
+}
+.card-sporty {
+  background: #fff url(./shoes\ sporty.png) no-repeat center right/200px;
+}
+.card-casual {
+  background: #fff url(./shoes\ casual.png) no-repeat center right/200px;
+}
+.card-formal {
+  background: #fff url(./shoes\ formal.png) no-repeat center right/200px;
+  margin-bottom: 0;
+}
+button {
+  width: 150px;
+  font-size: 15px;
+  margin: 10px 0;
+  color: white;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.card-sporty button {
+  background-color: red;
+}
+.card-casual button {
+  background-color: #00f;
+}
+.card-formal button {
+  background-color: brown;
+}
+/* CSS priority hierarchy:
+1. !important;
+2. inline styles;
+3. IDs;
+4. Classes, attributes, and pseudo-classes (e.g., .myClass, [type="radio"], :hover);
+5. Universal, type, and pseudo-element selectors (e.g., *, p, ::before).*/

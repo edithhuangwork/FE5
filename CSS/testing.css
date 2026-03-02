@@ -1,0 +1,43 @@
+body {
+    font-family: "Asimovian", "Chiron GoRound TC", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* 3. CSS 設定：中英分開用 */
+/* 預設：中文用 Chiron GoRound TC */
+/* .chinese {
+    font-family:  "Asimovian";
+} */
+/* 英文專用：Asimovian */
+.english {
+    font-family: "Asimovian";
+}
+/* 標題：中英混用 */
+h1 {
+    font-family: "Asimovian";
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: "Asimovian";
+    font-weight: 400;
+    font-style: italic;
+}
+/* 範例文字框 */
+.demo-box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    font-family: "Asimovian", "Chiron GoRound TC", sans-serif;
+}
+}

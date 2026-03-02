@@ -1,0 +1,87 @@
+✅ 顏色主題：
+- 京都：櫻粉 + 金黃
+- 巴黎：鐵塔棕 + 藍天
+- 里約：熱帶綠 + 桑巴紅
+- 開普敦：海洋藍 + 桌山土黃
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: none;
+}
+body {
+  font-family: "Poppins", "Lato", "Chiron GoRound TC", sans-serif;
+  line-height: 1.5;
+  border: 1px solid red;
+}
+.container {
+  width: 1100px;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.logo-icon { 
+  width: 150px;
+  height: 150px;
+  img {
+    width: 100%;
+  }
+}
+.logo-text {
+  font-size: 75px;
+  font-weight: 700;
+  background: linear-gradient(to right, #015D9D, #0FA426);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 30px;
+  justify-content: end;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #015D9D;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #0FA426;
+  cursor: pointer;
+}
+footer {
+  font-family: "Chiron GoRound TC", "Lato";
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 20px;
+  }
+  .logo-text {
+    font-size: 20px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

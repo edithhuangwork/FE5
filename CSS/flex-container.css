@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-item {
+    height: 200px;
+    width: 200px;
+    background:coral;
+    border: 1px solid black
+}
+.flex-container {
+    background-color: aquamarine;display: flex;
+    flex-direction: row;
+    /* row/column/row-reverse/conlumn-reverse */
+    row-gap: 10px;
+    column-gap: 20px;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+    /* wrap vs nowrap */
+    width: 500px;
+    height: 800px;
+}

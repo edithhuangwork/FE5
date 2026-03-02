@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Input form</h1>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="enter your name" 
+            minlength="3" 
+            maxlength="10"
+            required
+            />
+        </div>
+        <br/>
+        <div>
+            <label for="email">Email</label>
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="enter your email"
+            disabled
+            value="abc@abc.com"/>
+            <!-- disabled不會出街 readonly有數值-->
+        </div>
+        <br/>
+        <div>
+            <label for="password">Password</label>
+            <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            >
+            <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" -->
+        </div>
+        <br/>
+        <>
+            <label for="prodcut">Product</label>
+            <select name="product" id="product" multiple size="4">
+                <!-- 刪除mulitple size就會係drop-down list -->
+                <option value="iphone">iPhone</option>
+                <option value="imac">iMac</option>
+                <option value="ipad">iPad</option>
+                <option value="macbook">Macbook</option>
+            </select>
+            <br/>
+            <textarea
+            name="message" 
+            id="message" 
+            placeholder="Enter your message" 
+            rows="4"
+            cols="40"
+            style="resize:none"
+            ></textarea>
+            <br/>
+            <label for="html">
+                <input 
+                type="checkbox" 
+                id="html" 
+                name="languages" 
+                value="html"/>
+                HTML</label>
+            <label for="JavaScript">
+                <input 
+                type="checkbox" 
+                id="JavaScript" 
+                name="languages" 
+                value="JavaScript"
+                checked
+                disabled/>
+                <!-- 加checked就會default揀左,disabled就改唔到 -->
+                JavaScript</label>
+            <label for="css">
+                <input 
+                type="checkbox" 
+                id="css" 
+                name="languages" 
+                value="css"/>
+                CSS</label> 
+            <br/><br/>
+            <label for="small">
+                <input type="radio" id="small" name="size" value="small"/>Small</label>
+            <label for="medium">
+                <input type="radio" id="medium" name="size" value="medium"/>Medium</label>            
+            <label for="large">
+                <input type="radio" id="large" name="size" value="large"/>Large</label>
+            <br/><br/>
+            <div>
+            <label for=color>Color</label>
+                <input type="color" id="color" value="color" />
+            </div>
+            <div>
+            <label for=date>Date</label>
+                <input type="date" id="date" value="date" />
+            </div>
+            <div>
+            <label for=time>Time</label>
+                <input type="time" id="time" value="time" />
+            </div>
+            <div>
+            <label for=week>Week</label>
+                <input type="week" id="week" value="week" />
+            </div>
+            <div>
+            <label for=month>Month</label>
+                <input type="month" id="month" value="month" />
+            </div>
+            <div>
+            <label for=url>URL</label>
+                <input type="url" id="url" value="url" />
+            </div>
+            <div>
+                <label for="range">Range</label>
+                <input type="range" id="range" name="range" min="0" max="300" step="5" value="100" style="width:300px"/>
+                <!-- 寫value=？就係default由幾多開始，可以adjust -->
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

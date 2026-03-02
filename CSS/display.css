@@ -1,0 +1,30 @@
+* {
+    border: 1px solid red
+}
+/* display none 不佔空間 */
+.none-el {
+    display: none;
+}
+/* visibility hidden 不展示但不佔空間 */
+.hidden-el {
+    visibility: hidden;
+}
+/*  */
+p {
+    display: inline;
+    padding: 5px;
+    margin: 20px;
+}
+a {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: lightblue;
+    margin: 20px 10px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+} 

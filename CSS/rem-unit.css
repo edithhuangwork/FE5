@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    background:coral;
+    height: 100vh;
+    /* vh:viewport height browser高度 */
+    width: 100vw;
+    /* vw:viewport width browser寬度 */
+}
+h1 {
+    font-size: 7vw;
+    /* unit如用vh/vw，字體會根據viewport大小而放大縮小 */
+    padding: 0.3rem 0;
+    /* rem: root em, 基於html的font-size(default 16px，in this case 20px, 那2rem=20px*2=40px)*/
+}
+p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+ul {
+    font-size: 1.5em;
+    /* em 基於上一層的font-size而改變，in this case */
+}

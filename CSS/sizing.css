@@ -1,0 +1,46 @@
+.box {
+    background-color: darkblue;
+    color: white;
+    /* padding: 20px; */
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    /* shortcut:top right bottom left */
+    padding: 20px 50px 70px 100px;
+    /* shortcut:verticall horizontal */
+    padding: 20px 50px;
+    /* shortcut:top horizontal bottom */
+    padding: 20px 50px 40px;
+    border: 10px solid green;
+    /* border-color: red; */
+    border-top-color: red;
+    border-top-width: 30px;
+    border-style: double;
+    border-radius: 20px;
+    border-top-left-radius: 200px;
+    /* 圓角只能一個個寫 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 50px;
+
+}
+.box-1 {
+    width: 200px;
+    height: 160px;
+    overflow: hidden;
+}
+.box-2 {
+    width: 45%;
+    display: inline-block;
+}
+.box-3 {
+    width: 45%;
+    display: inline-block;
+    min-width: 500px;
+    max-width: 800px;
+}
+.box-2 p {
+    width: 50%;
+}
