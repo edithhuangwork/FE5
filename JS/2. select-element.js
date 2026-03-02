@@ -21,7 +21,23 @@ title.textContent = "Hello World";
 title.innerText = "Hello again";
 // inner html - can insert html tags in string format
 title.innerHTML = "<strong>Shopping List</strong>";
-// case g: update css style by dot notation change css properties in camelCase
+// case g: update css style/attributes by dot notation change css properties in camelCase
 title.style.color = "blue";
 title.style.fontSize = "40px";
 title.style.backgroundColor = "yellow";
+// case h: querySelector, return first result - single element
+console.log(document.querySelector("h1")); // select by tag name
+console.log(document.querySelector("app-title")); // select by id
+console.log(document.querySelector(".container")); // select by class name
+console.log(document.querySelector("input[type='text']")); // select by attribute
+console.log(document.querySelector("li:nth-child(2)")); // select by pseudo class
+const secondItem = document.querySelector("li:nth-child(2)");
+secondItem.innerText = "Mango Juice";
+secondItem.style.color = "orange";
+const list = document.querySelector("ul");
+console.log(list);
+// narrow down the search scope by chaining querySelector
+const firstItem = list.querySelector("li");
+firstItem.style.color = "purple";
+// ==============================
+// all the above methods are return single html element

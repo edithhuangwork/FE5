@@ -115,3 +115,6 @@ img {
 ul {
     list-style: none;
 }
+.filter {
+    border: 1px solid red;
+}
