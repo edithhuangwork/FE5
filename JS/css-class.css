@@ -1,0 +1,8 @@
+.hidden {
+    display: hidden;
+}
+.card {
+    background: #f4f4f4;
+    border: 1px #ccc solid;
+    padding: 15px;
+}

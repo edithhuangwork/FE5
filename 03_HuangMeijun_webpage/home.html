@@ -8,16 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./home.css">
-    <title>Home</title>
+    <title>Home - PathPals</title>
 </head>
 <body>
-<div class="container">
-    <nav class="navbar">
+<nav class="navbar">
+    <div class="navbar-flex">
         <div class="logo-section">
-        <img src="./logo_icon.png" alt="logo" class="logo-icon">
-        <span class="logo-text">PathPals</span>
+            <img src="./logo_icon.png" alt="PathPals Logo" class="logo-icon">
+            <span class="logo-text">PathPals</span>
         </div>
-        <ul class="nav-menu">
+        <div class="main-menu">
+            <ul class="main-menu-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Kyoto</a></li>
@@ -26,53 +27,70 @@
             <li><a href="#">Cairo</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
-    </nav>
-</div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="mobile-menu-items">
+                <ul class="mobile-menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Kyoto</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Milan</a></li>
+                <li><a href="#">Cairo</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <footer id="contact">
     <h3>✉️ Contact Us ✉️</h3>
-    <div class="form-group details">
-        <label for="name">Name</label>
+    <form id="contact-form">
+        <div class="form-group details">
+            <label for="name">Name</label>
             <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            placeholder="enter your name" 
-            minlength="5" 
-            maxlength="25"
-            required
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your name" 
+                minlength="5" 
+                maxlength="25"
+                required
             />
-    </div>
-    <div class="form-group details">
-        <label for="email">Email</label>
+        </div>
+        <div class="form-group details">
+            <label for="email">Email</label>
             <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="Enter your email"
-            value="abc@abc.com"
-            required
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email"
+                required
             />
-    </div>
-    <div class="form-group details">
-        <textarea
-            name="message" 
-            id="message" 
-            placeholder="Enter your message" 
-            rows="4"
-            cols="40"
-            style="resize:none" >
-        </textarea>
-    </div>
-    
-
-
-
-├── 聯絡表單（姓名、Email、訊息）
-├── 社群連結 + QR Code
-└── 地圖：香港出發交通樞紐
-
+        </div>
+        <div class="form-group details">
+            <label for="message">Message</label>
+            <textarea
+                name="message" 
+                id="message" 
+                placeholder="Enter your message" 
+                rows="4"
+                cols="40"
+                style="resize:none"
+                required
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
     <p>© Copyright 2026 PathPals Limited. All rights reserved</p>
-    </footer>
+</footer>
+<script src="./home.js"></script>
 </body>
 </html>
 
