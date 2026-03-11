@@ -28,13 +28,13 @@ img {
     padding: 1rem 2rem;
     height: 80px;
 }
-.navbar .logo {
-    width: 50px;
-}
 .navbar-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbar .logo {
+    width: 50px;
 }
 .navbar .main-menu-list {
     display: flex;
