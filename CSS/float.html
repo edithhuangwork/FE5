@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+        }
+        .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        #id-2 {
+            float: left;
+            width: 68%;
+        }
+        #id-3 {
+            float: right;
+            width: 30%
+        }
+        .clr {
+            clear: both;
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="id-1" class="box">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est alias blanditiis, commodi ad voluptatum perspiciatis iste fugit distinctio ipsam quis architecto dicta hic deserunt repellendus voluptatibus aspernatur repudiandae corporis.</p>
+        </div>
+        <div id="id-2" class="box">
+            <h3>Heading 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est alias blanditiis, commodi ad voluptatum perspiciatis iste fugit distinctio ipsam quis architecto dicta hic deserunt repellendus voluptatibus aspernatur repudiandae corporis.</p>
+        </div>
+        <div id="id-3" class="box">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est alias blanditiis, commodi ad voluptatum perspiciatis iste fugit distinctio ipsam quis architecto dicta hic deserunt repellendus voluptatibus aspernatur repudiandae corporis.</p>
+        </div>
+        <div class="clr"></div>
+        <div id="id-4" class="box">
+            <h3>Heading 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem est alias blanditiis, commodi ad voluptatum perspiciatis iste fugit distinctio ipsam quis architecto dicta hic deserunt repellendus voluptatibus aspernatur repudiandae corporis.</p>
+        </div>
+    </div>
+</body>
+</html>
